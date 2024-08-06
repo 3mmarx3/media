@@ -44,7 +44,7 @@
 
   
   <div class="container">
-
+    <!-- <button id="exitFullscreenButton">إيقاف وضع الشاشة الكاملة</button> -->
 
 
     <div class="content-container">
@@ -54,7 +54,7 @@
 
     <div class="profile-header">
       <div class="profile-image">
-        <input type="checkbox" class="toggle-button">
+        <input type="checkbox" class="toggle-button" id="fullscreenButton">
 
       </div>
       
@@ -482,25 +482,45 @@
 }
 
 </style>
+
 <script>
   function openFullscreen() {
-      var elem = document.documentElement;
-      if (elem.requestFullscreen) {
-          elem.requestFullscreen();
-      } else if (elem.mozRequestFullScreen) { // Firefox
-          elem.mozRequestFullScreen();
-      } else if (elem.webkitRequestFullscreen) { // Chrome, Safari and Opera
-          elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { // IE/Edge
-          elem.msRequestFullscreen();
-      }
+    var elem = document.documentElement;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) {
+      // Firefox
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) {
+      // Chrome, Safari and Opera
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      // IE/Edge
+      elem.msRequestFullscreen();
+    }
   }
 
-  window.addEventListener('load', () => {
-      setTimeout(() => {
-          openFullscreen();
-      }, 1000); // تأخير طفيف للسماح بتحميل الصفحة بالكامل
-  });
+  function closeFullscreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      // Firefox
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+      // Chrome, Safari and Opera
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+      // IE/Edge
+      document.msExitFullscreen();
+    }
+  }
+
+  document
+    .getElementById("fullscreenButton")
+    .addEventListener("click", openFullscreen);
+  document
+    .getElementById("exitFullscreenButton")
+    .addEventListener("click", closeFullscreen);
 </script>
   </body>
 </html>

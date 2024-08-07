@@ -13,8 +13,8 @@ a {
   color: white;
 }
 :root {
-  --bg-color: #ffffff;
-  --text-color: #212121;
+  --bg-color: hsl(219, 29%, 14%);
+  --text-color: #e0e0e0;
 }
 [data-theme="dark"] {
   --bg-color: #121212;

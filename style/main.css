@@ -81,13 +81,6 @@ body {
   background-size: cover;
   border-radius: 50%;
   border: 2px solid #696c89;
-  position: relative;
-}
-input.toggle-button {
-  position: absolute;
-  right: -25px;
-  bottom: -15px;
-  z-index: 99999999999;
 }
 
 .pro {

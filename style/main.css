@@ -461,3 +461,7 @@ svg {
   background-size: 15px;
   margin: 10px;
 }
+
+.action-link {
+  display: none !important;
+}

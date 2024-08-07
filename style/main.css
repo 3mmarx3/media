@@ -154,7 +154,6 @@ svg.bi.bi-arrow-right-short {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
 }
 .container .content-container .biography-container .square-container {
   display: grid;

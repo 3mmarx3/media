@@ -156,36 +156,62 @@
             </div>
             <div class="activity-days-wrapper">
               <div class="day">
-                <div class="chart"></div>
+                <div class="chart" id="monday"></div>
                 <span>MON</span>
               </div>
               <div class="day">
-                <div class="chart"></div>
+                <div class="chart" id="tuesday"></div>
                 <span>TUE</span>
               </div>
               <div class="day current">
-                <div class="chart"></div>
+                <div class="chart" id="wednesday"></div>
                 <span>WED</span>
               </div>
               <div class="day">
-                <div class="chart"></div>
+                <div class="chart" id="thursday"></div>
                 <span>THU</span>
               </div>
               <div class="day">
-                <div class="chart"></div>
+                <div class="chart" id="friday"></div>
                 <span>FRI</span>
               </div>
               <div class="day">
-                <div class="chart"></div>
+                <div class="chart" id="saturday"></div>
                 <span>SAT</span>
               </div>
               <div class="day">
-                <div class="chart"></div>
+                <div class="chart" id="sunday"></div>
                 <span>SUN</span>
               </div>
             </div>
           </div>
-    
+          <script>
+            // Get the current day of the week (0-6) where 0 is Sunday and 6 is Saturday
+            const currentDay = new Date().getDay();
+      
+            // Array of day IDs
+            const days = [
+              "sunday",
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday",
+              "saturday",
+            ];
+      
+            // Highlight the current day
+            document.getElementById(days[currentDay]).classList.add("highlight");
+          </script>
+
+          <style>
+         .highlight {
+            background-color: var(--button-bg) !important;
+        }
+         .highlight::before {
+            background-color: var(--button-bg) !important;
+        }
+          </style>
       </div>
      
   </div>
@@ -241,7 +267,7 @@
  
     
 
-          <a class="social-media-link" href="#">
+          <a class="social-media-link" href="https://wa.me/01065424756">
             <button class="button">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512">
                 <defs>

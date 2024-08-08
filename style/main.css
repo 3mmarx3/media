@@ -228,14 +228,15 @@ svg.bi.bi-arrow-right-short {
 .container .content-container .follower-header {
   width: 100%;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 10px;
 }
 .container .content-container .follower-header * {
   padding-right: 20px;
 }
 .container .content-container .follower-header .name p {
   font-size: 24px;
+}
+.follower-header.m-5 {
+  margin: 2vh 0;
 }
 
 .name {

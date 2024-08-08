@@ -22,10 +22,6 @@ body {
   font-family: sans-serif;
 }
 
-.content-container {
-  overflow: hidden;
-}
-
 .tagline {
   color: #b8b8b8;
   font-size: 14px;
@@ -70,7 +66,7 @@ body {
   background-position: center center;
   background-size: cover;
   border-radius: 50%;
-  border: 2px solid #696c89;
+  border: 2px solid var(--button-bg);
 }
 
 .pro {

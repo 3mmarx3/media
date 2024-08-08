@@ -134,10 +134,7 @@ body[data-theme="dark"] {
 }
 
 .app-activity-box {
-  /* border-radius: 10px; */
   padding: 5px 0;
-  /* border: 1px solid var(--box-border);
-  background-color: var(--box-color); */
 }
 
 .activity-info-boxes {
@@ -202,7 +199,6 @@ body[data-theme="dark"] {
 
 .info-text-upper {
   font-size: 14px;
-  font-weight: 700;
 }
 
 .info-text-bottom {
@@ -277,4 +273,9 @@ body[data-theme="dark"] {
   display: block;
   font-size: 10px;
   color: var(--text-light);
+}
+
+head,
+body {
+  overflow: hidden !important ;
 }

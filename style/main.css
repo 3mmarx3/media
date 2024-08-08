@@ -12,23 +12,13 @@ a {
   text-decoration: none;
   color: white;
 }
-:root {
-  --bg-color: #060415;
-  --text-color: #e0e0e0;
-}
-[data-theme="dark"] {
-  --bg-color: #121212;
-  --text-color: #e0e0e0;
-}
 
 body {
   font-weight: 300;
   letter-spacing: 0.04em;
   height: 100vh;
-  color: #808487;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  overflow: hidden;
+  color: #e0e0e0;
+  background-color: #060415;
   font-family: sans-serif;
 }
 
@@ -50,9 +40,9 @@ body {
   content: "";
   position: relative;
   width: 2px;
-  height: 9.3333333333px;
+  height: 1vh;
   margin-right: 10px;
-  background-color: #66c6e9;
+  background-color: var(--button-bg);
 }
 
 .container {
@@ -81,13 +71,6 @@ body {
   background-size: cover;
   border-radius: 50%;
   border: 2px solid #696c89;
-  position: relative;
-}
-input.toggle-button {
-  position: absolute;
-  right: -25px;
-  bottom: -15px;
-  z-index: 99999999999;
 }
 
 .pro {
@@ -262,11 +245,6 @@ svg.bi.bi-arrow-right-short {
   fill: currentcolor;
 }
 
-/* .container .content-container .follower-container {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-} */
 .container .content-container .follower-container img {
   width: 55%;
   max-height: 240px;
@@ -464,4 +442,9 @@ svg {
 
 .action-link {
   display: none !important;
+}
+
+head,
+body {
+  overflow: hidden !important ;
 }

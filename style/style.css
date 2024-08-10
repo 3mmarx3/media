@@ -152,7 +152,7 @@ body[data-theme="dark"] {
 }
 .activity-info-box.time {
   background-color: var(--info-box-1);
-  color: var(--info-box-color-1);
+  /* color: var(--info-box-color-1); */
 }
 .activity-info-box.time .info-icon-wrapper {
   background-color: var(--info-icon-bg-1);
@@ -240,11 +240,11 @@ body[data-theme="dark"] {
   justify-content: flex-end;
   height: 10vh;
 }
-.day.current .chart {
+/* .day.current .chart {
   opacity: 1;
   transform: scale(1.2);
   transform-origin: bottom;
-}
+} */
 .day:first-child .chart {
   height: 20%;
 }

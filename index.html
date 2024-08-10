@@ -133,7 +133,7 @@
                   </svg>
                 </div>
                 <div class="info-text-wrapper">
-                  <span class="info-text-upper">122</span>
+                  <span class="info-text-upper date">122</span>
                   <span class="info-text-bottom">Meetings</span>
                 </div>
               </div>
@@ -165,7 +165,7 @@
                 <div class="chart" id="tuesday"></div>
                 <span>TUE</span>
               </div>
-              <div class="day current">
+              <div class="day ">
                 <div class="chart" id="wednesday"></div>
                 <span>WED</span>
               </div>
@@ -187,33 +187,9 @@
               </div>
             </div>
           </div>
-          <script>
-            // Get the current day of the week (0-6) where 0 is Sunday and 6 is Saturday
-            const currentDay = new Date().getDay();
-      
-            // Array of day IDs 
-            const days = [
-              "sunday",
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday",
-              "saturday",
-            ];
-      
-            // Highlight the current day       
-            document.getElementById(days[currentDay]).classList.add("highlight");
-          </script>
+    
 
-          <style>
-         .highlight {
-            background-color: var(--button-bg) !important;
-        }
-         .highlight::before {
-            background-color: var(--button-bg) !important;
-        }
-          </style>
+       
       </div>
      
   </div>
@@ -350,7 +326,6 @@
 
 </main>
 
-<script src="./script/app.js"></script>
 
 <style>
   .content {
@@ -533,6 +508,19 @@ background: rgba(10, 128, 236, 0.7);
 
 }
 </style>
+<script src="./script/app.js"></script>
+<style>
+  .highlight {
+     background-color: var(--button-bg) !important;
+     opacity: 1 !important;
 
+
+ }
+  .highlight::before {
+     background-color: var(--button-bg) !important;
+     opacity: 1 !important;
+
+ }
+   </style>
   </body>
 </html>

@@ -85,7 +85,7 @@ body {
 .flex {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .container .content-container .profile-header .profile-image img {

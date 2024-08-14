@@ -16,7 +16,6 @@ a {
 body {
   font-weight: 300;
   letter-spacing: 0.04em;
-  height: 100vh;
   color: #e0e0e0;
   background-color: #060415;
   font-family: sans-serif;
@@ -41,23 +40,17 @@ body {
   background-color: var(--button-bg);
 }
 
-.container {
-  height: 100%;
-  overflow: hidden;
-  padding: 25px;
-}
-
-.container .content-container .profile-header {
+.content-container .profile-header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-.container .content-container .profile-header .detail .name {
+.content-container .profile-header .detail .name {
   font-size: 24px;
 }
-.container .content-container .profile-header .profile-image {
+.content-container .profile-header .profile-image {
   width: 100px;
   height: 100px;
   border-radius: 5px;
@@ -88,11 +81,11 @@ body {
   gap: 5px;
 }
 
-.container .content-container .profile-header .profile-image img {
+.content-container .profile-header .profile-image img {
   width: 100%;
   background-size: cover;
 }
-.container .content-container .stat-container {
+.content-container .stat-container {
   width: 100%;
   border-bottom: solid 1px #ebebeb7a;
   padding: 20px 0;
@@ -100,7 +93,7 @@ body {
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.container .content-container .stat-container .stat {
+.content-container .stat-container .stat {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,16 +102,16 @@ body {
   align-items: center;
 }
 
-.container .content-container .stat-container .stat.middle {
+.content-container .stat-container .stat.middle {
   border-left: solid 1px #ebebeb7a;
   border-right: solid 1px #ebebeb7a;
 }
 
-.container .content-container .stat-container .stat .big-text {
+.content-container .stat-container .stat .big-text {
   font-size: 18px;
   margin-bottom: -12px;
 }
-.container .content-container .stat-container .stat .small-text {
+.content-container .stat-container .stat .small-text {
   font-size: 14px;
   color: #b8b8b8;
 }
@@ -128,18 +121,18 @@ svg.bi.bi-arrow-right-short {
   height: 25px;
 }
 
-.container .content-container .biography-container {
+.content-container .biography-container {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.container .content-container .biography-container .square-container {
+.content-container .biography-container .square-container {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-top: 10px;
 }
-.container .content-container .biography-container .square-container .square {
+.content-container .biography-container .square-container .square {
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -194,7 +187,7 @@ svg.bi.bi-arrow-right-short {
   font-size: 14px;
   color: #b8b8b8;
 }
-.container .content-container .action-link {
+.content-container .action-link {
   width: 100%;
   display: flex;
   align-items: center;
@@ -203,14 +196,14 @@ svg.bi.bi-arrow-right-short {
   border-top: solid 1.5px #ebebeb;
   border-bottom: solid 1.5px #ebebeb;
 }
-.container .content-container .follower-header {
+.content-container .follower-header {
   width: 100%;
   display: flex;
 }
-.container .content-container .follower-header * {
+.content-container .follower-header * {
   padding-right: 20px;
 }
-.container .content-container .follower-header .name p {
+.content-container .follower-header .name p {
   font-size: 24px;
 }
 .follower-header.m-5 {
@@ -240,12 +233,12 @@ svg.bi.bi-arrow-right-short {
   fill: currentcolor;
 }
 
-.container .content-container .follower-container img {
+.content-container .follower-container img {
   width: 55%;
   max-height: 240px;
   object-fit: cover;
 }
-.container .content-container .follower-container .follower-stat-container {
+.content-container .follower-container .follower-stat-container {
   display: flex;
   flex-direction: column;
 }
@@ -311,12 +304,12 @@ svg.bi.bi-arrow-right-short {
   .small-text {
   color: #b8b8b8;
 }
-.container .content-container .follower-container .follow-bio-container {
+.content-container .follower-container .follow-bio-container {
   width: 55%;
   display: flex;
   margin: 10px 0px;
 }
-.container .content-container .follower-container .follow-bio-container .stat {
+.content-container .follower-container .follow-bio-container .stat {
   border-left: solid 1.5px #ebebeb;
   padding: 5px 60px 5px 10px;
 }
@@ -409,6 +402,11 @@ svg {
   }
   .error {
     display: none;
+  }
+
+  body {
+    overflow: hidden;
+    padding: 3vh;
   }
 }
 

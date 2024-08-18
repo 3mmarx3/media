@@ -514,3 +514,6 @@ button.follow span svg {
   color: white;
   fill: white;
 }
+figure.image {
+  margin-top: 2vh;
+}

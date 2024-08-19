@@ -332,179 +332,150 @@
         
          </div>
 
-         <fieldset>
-          <legend>Slide Animation (Default)</legend>
-          <a href="#">
-            <input type="checkbox" class="chip" role="switch" value="facebook" aria-label="facebook" />
+     <div class="mt-3">
+      <fieldset>
+        <legend>Slide Animation (Default)</legend>
+        <a href="#">
+          <input type="checkbox" class="chip" role="switch" value="facebook" aria-label="facebook" />
 
-          </a>
-          <a href="#">          <input type="checkbox" class="chip" role="switch" value="instagram" aria-label="instagram" style="--color: #fd5" checked />
-          </a>
-          <input type="checkbox" class="chip" role="switch" value="Apple" aria-label="Apple" style="--color:#f88" />
-          <input type="checkbox" class="chip" role="switch" value="Peach" aria-label="Peach" style="--color:#fa3" />
-        </fieldset>
-        
-        <fieldset>
-          <legend>Grow Animation</legend>
-          <input type="checkbox" class="chip grow" role="switch" value="Pear" aria-label="Pear" />
-          <input type="checkbox" class="chip grow" role="switch" value="Banana" aria-label="Banana" style="--color: #fd5" />
-          <input type="checkbox" class="chip grow" role="switch" value="Apple" aria-label="Apple" style="--color:#f88" />
-          <input type="checkbox" class="chip grow" role="switch" value="Peach" aria-label="Peach" style="--color:#fa3" checked />
-        </fieldset>
-        
-        <fieldset>
-          <legend>Bounce Animation</legend>
-          <input type="checkbox" class="chip bounce" role="switch" value="Pear" aria-label="Pear"  />
-          <input type="checkbox" class="chip bounce" role="switch" value="Banana" aria-label="Banana" style="--color: #fd5" />
-          <input type="checkbox" class="chip bounce" role="switch" value="Apple" aria-label="Apple" style="--color:#f88" checked />
-          <input type="checkbox" class="chip bounce" role="switch" value="Peach" aria-label="Peach" style="--color:#fa3" />
-        </fieldset>
-        
-        <fieldset>
+        </a>
+        <a href="#">          <input type="checkbox" class="chip" role="switch" value="instagram" aria-label="instagram" style="--color: #fd5" checked />
+        </a>
+        <input type="checkbox" class="chip" role="switch" value="Apple" aria-label="Apple" style="--color:#f88" />
+        <input type="checkbox" class="chip" role="switch" value="Peach" aria-label="Peach" style="--color:#fa3" />
+      </fieldset>
+      
+      <fieldset>
+        <legend>Grow Animation</legend>
+        <input type="checkbox" class="chip grow" role="switch" value="Pear" aria-label="Pear" />
+        <input type="checkbox" class="chip grow" role="switch" value="Banana" aria-label="Banana" style="--color: #fd5" />
+        <input type="checkbox" class="chip grow" role="switch" value="Apple" aria-label="Apple" style="--color:#f88" />
+        <input type="checkbox" class="chip grow" role="switch" value="Peach" aria-label="Peach" style="--color:#fa3" checked />
+      </fieldset>
+      
+   
+      
+      <!-- <fieldset>
+     </div>
           <legend>Disabled Styles</legend>
           <input type="checkbox" class="chip bounce" role="switch" value="Pear" aria-label="Pear" disabled />
           <input type="checkbox" class="chip bounce" role="switch" value="Banana" aria-label="Banana" style="--color: #fd5" disabled/>
           <input type="checkbox" class="chip bounce" role="switch" value="Apple" aria-label="Apple" style="--color:#f88" checked disabled />
           <input type="checkbox" class="chip bounce" role="switch" value="Peach" aria-label="Peach" style="--color:#fa3" checked disabled />
-        </fieldset>
+        </fieldset> -->
 
 
-        <style>
-          input:where(.chip[type="checkbox"]) {
+    <style>
+      fieldset {
+  border: navajowhite;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+legend {
+  color: #b8b8b8;
+  margin: 10px;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
+.service-icon-box {
+  display: flex;
+}
+
+input[type="checkbox"].chip {
   --color: #6c6;
-  font-size: 1rem;
-  appearance: none;
-  position: relative;
-  border: 1px solid #0004;
+  border: 1px solid #4c4c4c;
   border-radius: 100em;
-  overflow: clip;
-  margin: 0;
-  display: inline-block;
+  font-size: 1rem;
+  overflow: hidden;
+  position: relative;
   box-sizing: border-box;
   padding: 0;
+  appearance: none !important;
+  width: max-content;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input[type="checkbox"].chip::after {
+  content: attr(value);
+  position: relative;
+  padding: 10px 15px 10px 30px;
+  display: block;
   color: var(--text-color);
-  
-  &::after {
-    content: attr(value);
-    white-space: pre;
-    line-height: 1;
-    position: relative;
-    padding: 0.5em 1em 0.5em 2em;
-    display: block;
-  }
-  
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 0.75em;
-    aspect-ratio: 1;
-    background: linear-gradient(currentcolor 0 0), linear-gradient(currentcolor 0 0);
-    background-position: -200% -2em, 2em -200%, 50% 50%;
-    background-size: 1em 0.125em, 0.125em 1em;
-    background-repeat: no-repeat;
-    background-color: var(--color);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 1.125em;
-    translate: -50% -50%;
-    rotate: 45deg;
-    transition: width 0.25s, background-position 0.5s;
-  }
-  
-  &.grow, &.bounce {
-    &::before {
-      background-position: 50% 50%, 50% 50%, 50% 50%;
-      background-size: 0 0, 0 0;
-      transition: width 0.25s, background-size 0.5s;
-    }
-  }
-  
-  &.bounce {
-    &::before {
-      transition-timing-function: ease-in-out, cubic-bezier(0.75, 0, 0.5, 2);
-    }
-  }
-  
-  &:checked {
-    &::before {
-      width: 200%;
-      background-position: 50% 50%, 50% 50%, 50% 50%;
-      background-size: 1em 0.125em, 0.125em 1em;
-    }
-  }
-  
-  &:disabled {
-    --color: #eee !important;
-    color: #6c6c6c;
-    border-color: #0001;
-  }
-  
-  &:hover:not(:disabled) {
-    border-color: #000a;
-    background-color: rgb(from var(--color) r g b / 10%);
-    transition: 0.4s;
-  }
 }
 
-@media print {
-  input:where(.chip[type="checkbox"]) {
-    &, &::before, &::after {
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
-    }
-  }
+input[type="checkbox"].chip::before {
+  content: "";
+  width: 12px;
+  aspect-ratio: 1;
+  background: linear-gradient(currentcolor 0 0),
+    linear-gradient(currentcolor 0 0);
+  background-position: -200% -2em, 2em -200%, 50% 50%;
+  background-size: 1em 0.125em, 0.125em 1em;
+  background-repeat: no-repeat;
+  background-color: var(--color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 1.125em;
+  translate: -50% -50%;
+  rotate: 45deg;
+  transition: width 0.25s, background-position 0.5s;
 }
 
-@media (prefers-reduced-motion) {
-  input:where(.chip[type="checkbox"]) {
-    &, &::before, &::after {
-      transition: none !important;
-    }
-  }
+input[type="checkbox"].chip.grow::before,
+input[type="checkbox"].chip.bounce::before {
+  background-position: 50% 50%, 50% 50%, 50% 50%;
+  background-size: 0 0, 0 0;
+  transition: width 0.25s, background-size 0.5s;
 }
 
-/*
-high-contrast styles:
-- all the dots will be highlight color
-- Disabled will be gray
-- No crosses (they are removed as backgrounds)
-*/
-@media (prefers-contrast: more) {
-  input:where(.chip[type="checkbox"]) {
-    &::before {
-      background: highlight;
-    }
-    
-    &:disabled {
-      border-color: gray-text;
-      
-      &::before {
-        background: graytext;
-      }
-      
-      &::after {
-        color: graytext;
-      }
-    }
-  }
+input[type="checkbox"].chip:checked::before {
+  width: 200%;
+  background-position: 50% 50%, 50% 50%, 50% 50%;
+  background-size: 1em 0.125em, 0.125em 1em;
 }
 
-
-
-
-/* DEMO - START */
-
-fieldset {
-  border-color: #0000;
-line-height: 3;
-  & legend {
-    color: #b8b8b8;
-    font-weight: 500;
-  }
+input[type="checkbox"].chip:disabled {
+  --color: #eee !important;
+  color: #6c6c6c;
+  border-color: #4c4c4c;
 }
-/* DEMO - END */
-        </style>
+
+::-webkit-scrollbar {
+  width: 0px;
+  border-radius: 10px;
+}
+
+.r-1xvli5t {
+  height: 1em;
+}
+
+.r-yyyyoo {
+  fill: currentcolor;
+}
+
+.hidden {
+  height: 5vh;
+}
+
+.r-1cvl2hr {
+  color: #1d9bf0;
+}
+
+.captions {
+  margin: 10px;
+  font-weight: 700;
+  text-align: right;
+}
+
+    </style>
        </div>
      </div>
 
@@ -916,6 +887,12 @@ background: rgba(10, 128, 236, 0.7);
 
     background-size: 20px;
   }
+
+  .mt-3 {
+    margin-top: 3vh;
+}
 </style>
+
+
   </body>
 </html>

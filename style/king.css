@@ -233,11 +233,29 @@ small {
   font-family: sans-serif;
 }
 
-.server.widget.secondary.row svg {
-  fill: var(--color-dark) !important;
+small.muted.Copyright {
   color: var(--color-dark) !important;
 }
 
-small.muted.Copyright {
-  color: var(--color-dark) !important;
+.servers.column.column_cu {
+  overflow: auto;
+  height: 100vh;
+  padding-bottom: 70vh;
+}
+
+svg._svg.center {
+  color: white !important;
+  fill: white !important;
+}
+
+.row.row_gap .button_Cu {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row.row_gap .button_Cu svg {
+  fill: black !important;
+  color: black !important;
 }

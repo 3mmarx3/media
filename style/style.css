@@ -142,7 +142,6 @@ body[data-theme="dark"] {
 .activity-info-box {
   border-radius: 10px;
   padding: 10px;
-  margin-bottom: 8px;
 }
 .activity-info-box.time {
   background-color: var(--info-box-1);

@@ -249,14 +249,15 @@ body[data-theme="dark"] {
   border-radius: 6px;
   height: 50%;
   width: 6px;
-  background-color: var(--button-bg);
+  /* background-color: var(--button-bg); */
+  background: #111;
   opacity: 0.5;
   position: relative;
 }
 .day .chart:before {
   content: "";
   position: absolute;
-  background-color: var(--button-bg);
+  background: #111;
   width: 6px;
   height: 6px;
   border-radius: 50%;

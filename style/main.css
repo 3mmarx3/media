@@ -44,7 +44,14 @@ body {
   width: 100%;
   gap: 20px;
   align-items: center;
+}
+
+.div_ {
   margin: 20px 0;
+}
+
+.div_ .web {
+  margin: 10px;
 }
 
 .content-container .profile-header .detail .name {
@@ -516,4 +523,7 @@ button.follow span svg {
 }
 figure.image {
   margin-top: 2vh;
+  border-radius: 5px;
+  background: var(--bg-c);
+  padding: 10px;
 }

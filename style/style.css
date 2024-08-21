@@ -269,10 +269,6 @@ body[data-theme="dark"] {
   color: var(--text-color);
 }
 
-head,
-body {
-  overflow: hidden !important ;
-}
 
 span.info-text-upper {
   color: #e0e0e0;

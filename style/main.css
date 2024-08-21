@@ -412,7 +412,6 @@ svg {
   }
 
   body {
-    overflow: hidden;
     padding: 2vh;
   }
 }
@@ -421,11 +420,6 @@ svg {
 
 .action-link {
   display: none !important;
-}
-
-head,
-body {
-  overflow: hidden !important ;
 }
 
 /*  */

@@ -237,12 +237,6 @@ small.muted.Copyright {
   color: var(--color-dark) !important;
 }
 
-.servers.column.column_cu {
-  overflow: auto;
-  height: 100vh;
-  padding-bottom: 70vh;
-}
-
 svg._svg.center {
   color: white !important;
   fill: white !important;
@@ -258,4 +252,335 @@ svg._svg.center {
 .row.row_gap .button_Cu svg {
   fill: black !important;
   color: black !important;
+}
+
+a._a_link {
+  --color: #6c6;
+  border: 1px solid #4c4c4c;
+  border-radius: 100em;
+  font-size: 1rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+  appearance: none !important;
+  width: max-content;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+/*  */
+
+fieldset {
+  border: navajowhite;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+legend {
+  color: #b8b8b8;
+  margin: 10px;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
+.service-icon-box {
+  display: flex;
+}
+
+input[type="checkbox"].chip {
+  --color: #6c6;
+  border: 1px solid #4c4c4c;
+  border-radius: 100em;
+  font-size: 1rem;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  appearance: none !important;
+  width: max-content;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pot {
+  width: 12px;
+  height: 12px;
+  aspect-ratio: 1;
+  background: linear-gradient(currentcolor 0 0),
+    linear-gradient(currentcolor 0 0);
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  border-radius: 10px;
+}
+
+.r-1xvli5t {
+  height: 1em;
+}
+
+.r-yyyyoo {
+  fill: currentcolor;
+}
+
+.hidden {
+  height: 5vh;
+}
+
+.r-1cvl2hr {
+  color: #1d9bf0;
+}
+
+.captions {
+  margin: 10px;
+  font-weight: 700;
+  text-align: right;
+}
+/*  */
+
+.basic-marquee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1vh;
+}
+
+.basic-marquee .button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.basic-marquee svg {
+  width: 45px;
+}
+
+.basic-marquee button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cls-1 {
+  fill: #1ab7ea;
+}
+
+.cls-1,
+.cls-2 {
+  fill-rule: evenodd;
+}
+
+.cls-2 {
+  fill: #fff;
+}
+
+.cls-3 {
+  fill: #ee8208;
+  fill-rule: evenodd;
+}
+
+.cls-4 {
+  fill: #fff;
+}
+
+.cls-5,
+.cls-6 {
+  fill-rule: evenodd;
+}
+
+.cls-5 {
+  color: #48dd55;
+}
+
+.cls-6 {
+  color: #fff;
+}
+
+.cls-7 {
+  color: #0a66c2;
+}
+
+.cls-7,
+.cls-8 {
+  fill-rule: evenodd;
+}
+
+.cls-8 {
+  fill: #fff;
+}
+
+.cls-9 {
+  color: #10b7f4;
+}
+
+.cls-9,
+.cls-10 {
+  fill-rule: evenodd;
+}
+
+.cls-10 {
+  fill: #fff;
+}
+
+.cls-11 {
+  fill: #1da1f2;
+}
+
+.cls-11,
+.cls-12 {
+  fill-rule: evenodd;
+}
+
+.cls-12 {
+  fill: #fff;
+}
+
+.cls-13 {
+  color: #ea4c89;
+}
+
+.cls-13,
+.cls-14 {
+  fill-rule: evenodd;
+}
+
+.cls-14 {
+  fill: #fff;
+}
+
+.cls-15 {
+  fill: #1769ff;
+}
+
+.cls-15,
+.cls-16 {
+  fill-rule: evenodd;
+}
+
+.cls-16 {
+  fill: #fff;
+}
+
+.cls-17 {
+  color: #f26522;
+}
+
+.cls-17,
+.cls-18 {
+  fill-rule: evenodd;
+}
+
+.cls-18 {
+  fill: #fff;
+}
+
+/*  */
+
+.btn_ {
+  position: relative;
+  border: none;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.btn_ a {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(10, 128, 236, 0.7);
+  padding: 5px;
+}
+
+.btn_ a svg {
+  width: 3em;
+}
+
+#facebook {
+  color: white;
+}
+
+.git {
+  background: #181818 !important;
+}
+
+/*  */
+
+.highlight {
+  background-color: var(--button-bg) !important;
+  opacity: 1 !important;
+}
+
+.highlight::before {
+  background-color: var(--button-bg) !important;
+  opacity: 1 !important;
+}
+
+.content {
+  display: none;
+}
+
+:root {
+  --bg-color: black;
+  --text-color: #e0e0e0;
+
+  --bg-c: white;
+}
+
+[data-theme="dark"] {
+  --bg-color: #ffffff;
+  --text-color: #212121;
+
+  --bg-c: black;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.toggle-button {
+  -webkit-appearance: none;
+  outline: none;
+
+  position: relative;
+  transition: 0.4s;
+  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/sun.png")
+    no-repeat center #ffffff;
+
+  background-size: 20px;
+  cursor: pointer;
+}
+
+.toggle-button:checked {
+  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/moon.png")
+    no-repeat center #212121;
+
+  background-size: 20px;
+}
+
+.mt-3 {
+  margin-top: 3vh;
+  line-height: 3;
+}
+
+ul li svg {
+  fill: var(--text-color);
+}
+
+.activity-info-box {
+  background: #111 !important;
 }

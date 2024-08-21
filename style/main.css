@@ -33,10 +33,11 @@ body {
 .blue-strip:before {
   content: "";
   position: relative;
-  width: 2px;
-  height: 1vh;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   margin-right: 10px;
-  background-color: var(--button-bg);
+  background-color: #111;
 }
 
 .content-container .profile-header {
@@ -66,7 +67,7 @@ body {
   background-position: center center;
   background-size: cover;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid #111;
 }
 
 .pro {
@@ -344,75 +345,16 @@ svg {
 }
 
 /*  */
-.error {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 
-/*======================
-    404 page
-=======================*/
-
-.page_404 {
-  background: #fff;
-  height: 100vh;
+._main {
+  padding: 2vh;
 }
-
-.container_ {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.page_404 img {
-  width: 100%;
-}
-
-.four_zero_four_bg {
-  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.four_zero_four_bg h1 {
-  font-size: 80px;
-}
-
-.four_zero_four_bg h3 {
-  font-size: 80px;
-}
-
-.link_404 {
-  color: #fff !important;
-  padding: 10px 20px;
-  background: #39ac31;
-  margin: 20px 0;
-  display: inline-block;
-}
-.contant_box_404 {
-  margin-top: -50px;
-}
-.row {
-  width: 100%;
-  text-align: center;
-  font-family: sans-serif;
-}
-/*  */
-
 @media screen and (max-width: 767px) {
   main {
     display: block !important;
   }
   .error {
     display: none;
-  }
-
-  body {
-    padding: 2vh;
   }
 }
 
@@ -520,4 +462,29 @@ figure.image {
   border-radius: 5px;
   background: var(--bg-c);
   padding: 10px;
+}
+
+.servers.column.column_cu {
+  padding-bottom: 5vh;
+}
+
+._main {
+  display: none !important;
+}
+.box {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  ._main {
+    display: block !important;
+  }
+  .error {
+    display: none;
+  }
 }

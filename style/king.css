@@ -269,6 +269,7 @@ a._a_link {
   align-items: center;
   justify-content: space-around;
   gap: 5px;
+  color: var(--text-color);
 }
 
 /*  */
@@ -373,7 +374,7 @@ input[type="checkbox"].chip {
 }
 
 .cls-1 {
-  fill: #1ab7ea;
+  color: #001c77;
 }
 
 .cls-1,
@@ -424,22 +425,8 @@ input[type="checkbox"].chip {
   color: #10b7f4;
 }
 
-.cls-9,
-.cls-10 {
-  fill-rule: evenodd;
-}
-
-.cls-10 {
-  fill: #fff;
-}
-
 .cls-11 {
   fill: #1da1f2;
-}
-
-.cls-11,
-.cls-12 {
-  fill-rule: evenodd;
 }
 
 .cls-12 {
@@ -450,39 +437,16 @@ input[type="checkbox"].chip {
   color: #ea4c89;
 }
 
-.cls-13,
-.cls-14 {
-  fill-rule: evenodd;
-}
-
-.cls-14 {
-  fill: #fff;
-}
-
 .cls-15 {
   fill: #1769ff;
-}
-
-.cls-15,
-.cls-16 {
-  fill-rule: evenodd;
-}
-
-.cls-16 {
-  fill: #fff;
 }
 
 .cls-17 {
   color: #f26522;
 }
 
-.cls-17,
 .cls-18 {
-  fill-rule: evenodd;
-}
-
-.cls-18 {
-  fill: #fff;
+  color: #111;
 }
 
 /*  */
@@ -513,7 +477,7 @@ input[type="checkbox"].chip {
   color: white;
 }
 
-.git {
+._git {
   background: #181818 !important;
 }
 
@@ -583,4 +547,28 @@ ul li svg {
 
 .activity-info-box {
   background: #111 !important;
+}
+
+button.row.row_cu.secondary.center.button_Cu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.w_ {
+  background: white;
+}
+
+/* loding */
+
+#loding {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+  display: grid;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 9999999999999;
 }

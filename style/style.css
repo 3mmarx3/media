@@ -280,7 +280,6 @@ div.column:nth-child(2) {
 
 .button_Cu {
   color: var(--text);
-  padding: 10px;
   border-radius: 50%;
   border: none;
   width: 30px;
@@ -467,8 +466,8 @@ button.row.row_cu.secondary.center.button_Cu {
 }
 
 .content-container .profile-header .profile-image {
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   border-radius: 5px;
   background-image: url(../img/me.jpeg);
   background-repeat: no-repeat;
@@ -697,7 +696,7 @@ figure.image {
   gap: 10px;
 
   flex-direction: column;
-  margin-top: -7vh;
+  margin-top: -8vh;
 }
 
 .detail {
@@ -805,4 +804,9 @@ li.Social_li {
 .icon_Social svg {
   width: 26px !important;
   height: 26px !important;
+}
+
+.tagline_ .icon_Social svg {
+  width: 20px !important;
+  height: 20px !important;
 }

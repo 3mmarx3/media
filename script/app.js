@@ -1,24 +1,24 @@
-//
+// //
 
-var toggleSwitch = document.querySelector(".toggle-button");
+// var toggleSwitch = document.querySelector(".toggle-button");
 
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    /*If required*/
-    document.body.classList.add("dark-mode");
-    document.body.classList.remove("light-mode");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    /*If required*/
-    document.body.classList.add("light-mode");
-    document.body.classList.remove("dark-mode");
-  }
-}
+// function switchTheme(e) {
+//   if (e.target.checked) {
+//     document.documentElement.setAttribute("data-theme", "dark");
+//     /*If required*/
+//     document.body.classList.add("dark-mode");
+//     document.body.classList.remove("light-mode");
+//   } else {
+//     document.documentElement.setAttribute("data-theme", "light");
+//     /*If required*/
+//     document.body.classList.add("light-mode");
+//     document.body.classList.remove("dark-mode");
+//   }
+// }
 
-toggleSwitch.addEventListener("change", switchTheme, false);
+// toggleSwitch.addEventListener("change", switchTheme, false);
 
-//
+// //
 
 let loding = document.getElementById("loding");
 let _main = document.getElementById("_main");
@@ -119,4 +119,15 @@ left_ptn.addEventListener("click", function () {
 
 left_pt.addEventListener("click", function () {
   left_S.style.left = "1000vh";
+});
+
+let id = document.getElementById("id");
+let audio_left = document.getElementById("audio_left");
+let right_ = document.getElementById("right_");
+id.addEventListener("click", function () {
+  audio_left.style.left = "0";
+});
+
+right_.addEventListener("click", function () {
+  audio_left.style.left = "1000vh";
 });
